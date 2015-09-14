@@ -1,0 +1,2 @@
+module MaterialSuppliersHelper
+end
