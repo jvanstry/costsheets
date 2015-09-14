@@ -3,9 +3,6 @@ class CreateMatieralSuppliers < ActiveRecord::Migration
     create_table :matieral_suppliers do |t|
       t.string :name
 
-      has_many :jobs,
-        :through => :matieral_suppliers_jobs
-        
       t.timestamps null: false
     end
   end

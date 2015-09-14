@@ -3,9 +3,6 @@ class CreateTruckers < ActiveRecord::Migration
     create_table :truckers do |t|
       t.string :name
 
-      has_many :jobs, 
-        :through => :truckers_jobs
-
       t.timestamps null: false
     end
   end

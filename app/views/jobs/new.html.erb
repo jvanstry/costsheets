@@ -1,0 +1,16 @@
+<h1>
+  Create this job
+</h1>
+<%= form_for @job do |job| %>
+  <%= job.label :date %>:
+  <%= job.text_field :date %>
+  <%= job.label :customer %>:
+  <%= job.text_field :customer %>
+  <%= job.label :po %>:
+  <%= job.text_field :po %>
+  <%= job.label :worktype %>:
+  <%= job.text_area :worktype %>
+  <%= job.label :location %>:
+  <%= job.text_field :location %><br>
+  <%= job.submit 'create job'%>
+<% end %>

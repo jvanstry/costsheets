@@ -1,0 +1,8 @@
+<h1>
+  Create this trucker
+</h1>
+<%= form_for @trucker do |trucker| %>
+  <%= trucker.label :name %>:
+  <%= trucker.text_field :name %><br>
+  <%= trucker.submit 'create trucker'%>
+<% end %>

@@ -3,8 +3,8 @@ class CreateTruckersJobs < ActiveRecord::Migration
     create_table :truckers_jobs do |t|
       t.integer :num_trucks
 
-      t.belongs_to :trucker, index: true
-      t.belongs_to :job, index: true
+      t.integer :trucker_id, index: true
+      t.integer :job_id, index: true
     end
   end
 end
