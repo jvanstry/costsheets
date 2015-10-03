@@ -14,3 +14,7 @@
   <%= job.text_field :location %><br>
   <%= job.submit 'create job'%>
 <% end %>
+
+<% @suppliers.each do |dude| %>
+  <%= dude.name %>
+<% end %>

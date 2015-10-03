@@ -1,9 +1,0 @@
-class CreateMatieralSuppliers < ActiveRecord::Migration
-  def change
-    create_table :matieral_suppliers do |t|
-      t.string :name
-
-      t.timestamps null: false
-    end
-  end
-end

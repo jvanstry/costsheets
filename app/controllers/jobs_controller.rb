@@ -1,5 +1,6 @@
 class JobsController < ApplicationController
   def new
+    @suppliers = MaterialSupplier.all
   end
 
   def create
@@ -18,5 +19,3 @@ class JobsController < ApplicationController
   def destroy
   end
 end
-
-American Express, P.O. Box 650448, Dallas, TX 75265-0448

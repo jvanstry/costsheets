@@ -30,20 +30,20 @@ ActiveRecord::Schema.define(version: 20150917213057) do
     t.datetime "updated_at",        null: false
   end
 
-  create_table "matieral_suppliers", force: :cascade do |t|
+  create_table "material_suppliers", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "matieral_suppliers_jobs", force: :cascade do |t|
+  create_table "material_suppliers_jobs", force: :cascade do |t|
     t.text    "work_description"
     t.integer "material_supplier_id"
     t.integer "job_id"
   end
 
-  add_index "matieral_suppliers_jobs", ["job_id"], name: "index_matieral_suppliers_jobs_on_job_id", using: :btree
-  add_index "matieral_suppliers_jobs", ["material_supplier_id"], name: "index_matieral_suppliers_jobs_on_material_supplier_id", using: :btree
+  add_index "material_suppliers_jobs", ["job_id"], name: "index_material_suppliers_jobs_on_job_id", using: :btree
+  add_index "material_suppliers_jobs", ["material_supplier_id"], name: "index_material_suppliers_jobs_on_material_supplier_id", using: :btree
 
   create_table "sub_contractors", force: :cascade do |t|
     t.string   "name"
